@@ -14,12 +14,12 @@ class AuthService {
         });
 
         if (!userData) {
-            return res.warn(null, 'USER_NOT_FOUND');
+            return res.warn(null, 'User not found');
         }
 
         const passwordMatched = await userData.comparePassword(password);
         if (!passwordMatched) {
-            return res.unauthorized(null, 'INVALID_PASSWORD');
+            return res.unauthorized(null, 'Invalid Password');
         }
 
         const token = SignToken({

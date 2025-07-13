@@ -1,52 +1,52 @@
 {
-  "name": "paymentgateway",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "build": "tsc",
-    "format": "prettier --write .",
-    "start": "tsc && node dist/index.js",
-    "watch": "nodemon src/index.ts",
-    "prepare": "husky install"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "dependencies": {
-    "bcrypt": "^6.0.0",
-    "cors": "^2.8.5",
-    "dotenv": "^17.2.0",
-    "express": "^5.1.0",
-    "helmet": "^8.1.0",
-    "joi": "^17.13.3",
-    "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.16.3",
-    "morgan": "^1.10.0",
-    "razorpay": "^2.9.6",
-    "swagger-ui-express": "^5.0.1",
-    "winston": "^3.17.0",
-    "yamljs": "^0.3.0"
-  },
-  "devDependencies": {
-    "@types/bcrypt": "^5.0.2",
-    "@types/cors": "^2.8.19",
-    "@types/express": "^5.0.3",
-    "@types/helmet": "^0.0.48",
-    "@types/joi": "^17.2.2",
-    "@types/jsonwebtoken": "^9.0.10",
-    "@types/mongoose": "^5.11.96",
-    "@types/morgan": "^1.9.10",
-    "@types/node": "^24.0.13",
-    "@types/swagger-ui-express": "^4.1.8",
-    "@types/yamljs": "^0.2.34",
-    "ts-node": "^10.9.2",
-    "ts-node-dev": "^2.0.0",
-    "tsconfig-paths": "^4.2.0",
-    "typescript": "^5.8.3"
-  },
-  "lint-staged": {
-    "*.{ts,tsx,js,json,css,md}": "prettier --write"
-  }
+    "name": "paymentgateway",
+    "version": "1.0.0",
+    "description": "Backend-only Razorpay integration using Payment Links and Webhook verification in Node.js + TypeScript.",
+    "main": "index.js",
+    "scripts": {
+        "build": "tsc",
+        "format": "prettier --write .",
+        "start": "tsc && node dist/index.js",
+        "watch": "nodemon src/index.ts",
+        "prepare": "husky install"
+    },
+    "keywords": [],
+    "author": "Vaghela Digvijaysinh",
+    "license": "ISC",
+    "type": "commonjs",
+    "dependencies": {
+        "bcrypt": "^6.0.0",
+        "cors": "^2.8.5",
+        "dotenv": "^17.2.0",
+        "express": "^5.1.0",
+        "helmet": "^8.1.0",
+        "joi": "^17.13.3",
+        "jsonwebtoken": "^9.0.2",
+        "mongoose": "^8.16.3",
+        "morgan": "^1.10.0",
+        "razorpay": "^2.9.6",
+        "swagger-ui-express": "^5.0.1",
+        "winston": "^3.17.0",
+        "yamljs": "^0.3.0"
+    },
+    "devDependencies": {
+        "@types/bcrypt": "^5.0.2",
+        "@types/cors": "^2.8.19",
+        "@types/express": "^5.0.3",
+        "@types/helmet": "^0.0.48",
+        "@types/joi": "^17.2.2",
+        "@types/jsonwebtoken": "^9.0.10",
+        "@types/mongoose": "^5.11.96",
+        "@types/morgan": "^1.9.10",
+        "@types/node": "^24.0.13",
+        "@types/swagger-ui-express": "^4.1.8",
+        "@types/yamljs": "^0.2.34",
+        "ts-node": "^10.9.2",
+        "ts-node-dev": "^2.0.0",
+        "tsconfig-paths": "^4.2.0",
+        "typescript": "^5.8.3"
+    },
+    "lint-staged": {
+        "*.{ts,tsx,js,json,css,md}": "prettier --write"
+    }
 }
